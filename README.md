@@ -1,16 +1,16 @@
-# TÍTULO DO PROJETO
+# Connection Food
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de aplicação web front-end`
 
-`SEMESTRE`
+`1º semestre/2025`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
+* Milena Débora Guimarães Vieira
 * Nome completo do aluno 2
 * Nome completo do aluno 3
 * Nome completo do aluno 4
