@@ -1,49 +1,32 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+## Perfis de Usuário
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+|Perfil 01: Gerente de vendas    |
+|------|-----------------------------------------|----|
+|Descrição: | Responsável pela supervisão das operações diárias, gestão de equipes, controle de estoque e garantia de que os processos internos funcionem de forma eficiente.
+|Necessidades: | Gestão de pedidos, Facilidade no acompanhamento de pagamentos e Análise de vendas    | 
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
-## Personas
-
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
-
-Utilize também como referência o exemplo abaixo:
-
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+|Perfil 02: Cliente   |
+|------|-----------------------------------------|----|
+|Descrição: | Pessoa que busca adquirir os produtos ofertados pelo estabelecimento.  
+|Necessidades: | Rapidez no processo do pedido, Visualização do catálogo com os produtos disponíveis, Segurança nas transações, Opções de Pagamento Diversificadas e Acompanhamento da entrega do produto     | 
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|EU COMO... `QUEM`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Gerente  | Agilizar o processo de vendas             | Aumentar as vendas            |
+|Gerente       | Automatizar o processo de pedidos                 | Cortar custos |
+|Gerente       | Receber o produto comprado e endereço de entrega de maneira clara                | Facilitar o repasse da informação ao responsável pela entrega |
+|Cliente      | Fazer pedido online e recebê-los no endereço de preferência                  | Ter mais praticidade no dia a dia  |
+|Cliente      | Opções de pagamento diversificadas               | Conseguir pagar da maneira que posso ou desejo e finalizar a compra de forma mais rápida  |
+|Cliente      | Visualizar um cardápio organizado por categorias com produtos disponíveis                  | Facilitar a busca de um produto  |
+|Cliente      | Clareza na descrição dos produtos                   | Auxiliar na escolha do produto   |
+|Cliente      | Visualizar o horário de funcionamento                  | Saber que horas posso solicitar o recebimento de um pedido   |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -53,57 +36,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| O sistema deve exibir uma lista de produtos disponíveis para compra | ALTA | 
+|RF-002| O sistema deve permitir a busca e filtragem de produtos por categoria, preço e nome    | MÉDIA |
+|RF-003| O sistema deve calcular automaticamente o total do pedido com base nos produtos selecionados pelo cliente   | ALTA |
+|RF-004| O sistema deve permitir que o cliente finalize o pedido, fornecendo detalhes como endereço de entrega e forma de pagamento  | ALTA | 
+|RF-005| O sistema deve permitir que o usuário escolha entre diferentes formas de pagamento (cartão de crédito, débito e pix.).   | ALTA |
+|RF-006| O sistema deve permitir a gestão de pedidos   | ALTA |
+|RF-007| O sistema deve permitir a gestão do catálogo com os produtos disponíveis    | ALTA |
+|RF-008| O sistema deve permitir que o usuário acompanhe o status do seu pedido (em preparo, a caminho, entregue).   | ALTA | 
+|RF-009| O sistema deve permitir a atualização do status de entrega do pedido    | ALTA |
+|RF-010| O sistema deve permitir possuir dados de contato para suporte caso o cliente precise resolver problemas com o pedido.    | MÉDIA |
+|RF-011| O sistema deve exibir o horário de operação da confeitaria ao solicitar um pedido    | MÉDIA |
+**Prioridade: Alta / Média / Baixa.  
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
+|ID     | Descrição  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-## Restrições
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RNF-001| A aplicação deverá estar disponível 24hrs por dia  | MÉDIA | 
+|RNF-002| A aplicação deverá ser responsiva, priorizando a performance em dispositivos móveis |  MÉDIA | 
+|RNF-003| A aplicação deve ser capaz de ser executada em diferentes sistemas operacionais (Windows, Linux, macOS) e navegadores (Chrome, Firefox, Safari, Edge).   | MÉDIA | 
+|RNF-004| Os textos da aplicação deverão estar no idioma português  |  ALTA | 
+**Prioridade: Alta / Média / Baixa.
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
-## Diagrama de Casos de Uso
-
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
